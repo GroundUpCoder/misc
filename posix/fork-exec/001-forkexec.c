@@ -24,7 +24,7 @@ static void printUsage() {
 int main(int argc, char **argv) {
   // Skip the name of the process itself
   if (argc > 0) {
-    argc++;
+    argc--;
     argv++;
   }
 
@@ -41,7 +41,7 @@ int main(int argc, char **argv) {
     } else {
       break;
     }
-    argc++;
+    argc--;
     argv++;
   }
   if (argc <= 0) {
